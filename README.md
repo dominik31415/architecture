@@ -33,7 +33,7 @@ Trained styles:
 
 
 ### Training and results:
-The results are described in the notebook files. "examples.png" shows a few images, which were either classified correctly (first column) or incorrectly (second and third column). Arguably, many mis-classified images are tough cases even for human eyes (e.g. interoir images, images with overlayed text, images with multiple buildings). It would be interesting to see how this NN performs on a more curated data set.
+The "result.jpynb" file generates and describes a few figures of merit. "examples.png" shows some images, which were either classified correctly (first column) or incorrectly (second and third column). Arguably, many mis-classified images are tough cases even for human eyes (e.g. interoir images, images with overlayed text, images with multiple buildings). It would be interesting to see how this NN performs on a more curated data set.
 
 The confusion matrix is given here:
 ![here](https://github.com/dominik31415/architecture/blob/master/confusionMatrix.png)
