@@ -34,3 +34,5 @@ Trained styles:
 
 ### Training and results:
 see notebook files
+The confusion matrix is given here:
+![here](https://github.com/dominik31415/architecture/blob/master/confusionMatrix.png)
