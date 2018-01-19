@@ -33,6 +33,12 @@ Trained styles:
 
 
 ### Training and results:
-see notebook files
+The results are described in the notebook files.
+
 The confusion matrix is given here:
 ![here](https://github.com/dominik31415/architecture/blob/master/confusionMatrix.png)
+
+Three obvervations:
+- for most categories the accuracy is actually higher than 65%
+- the second worst category is the 'ottoman architecture', which also was the data set with the lowest quality sample images
+- the NN struggles to discern modern-postmodern (not really surprising IMHO)
