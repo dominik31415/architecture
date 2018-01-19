@@ -1,7 +1,7 @@
 # Classifying buildings by architectural style using Keras/InceptionV3 
 
 ### Summary:
-I trained (transfer learning + fine-tuning) the InceptionV3 CNN using Keras to classify buildings by their architectural style (I picked 10 styles, see below). The training images were harvested from Bing using a script. The NN eventually achieves about **65% accuracy**. Honestly, I expected better but it seems that most errors are due to either low quality training images (low res, multiple buildings) or styles that are difficult to discern even for humans (modern, postmodern, brutalist).
+I trained (transfer learning + fine-tuning) the InceptionV3 CNN using Keras to classify buildings by their architectural style (I picked 10 styles, see below). The training images were harvested from Bing using a script. The NN eventually achieves about **65% accuracy**. Honestly, I expected better but it seems that many errors are due to either low quality training images (low res, multiple buildings, interior images) or styles that are difficult to discern even for humans (modern, postmodern, brutalist). It would be interesting to see how this NN performs on a more curated data set.
 
 Trained styles:
 {0: 'artdeco',  1: 'brutalist',  2: 'classical',  3: 'colonial',  4: 'gothic',  5: 'modern',  6: 'ottoman',  7: 'postmodern',  8: 'romanesque',  9: 'tudor'}
@@ -15,7 +15,7 @@ Trained styles:
 - training.ipynb , main script for training the NN 
 - results.ipynb , generates some graphs/metrics of the trained NN 
 - weights-xx.hdf5 , my weights after fine-tuning
-- ImageDataGeneratorExtended.py , a modified Keras image generator. it adds the option to crop images randomly
+- ImageDataGeneratorExtended.py , a modified Keras image generator. it adds the option to crop images randomly "random_crop"
 
 
 
@@ -35,7 +35,7 @@ Trained styles:
 ### Training and results:
 All training is done in "training.ipynb". On my computer (SSD and GTX1060) it takes about 3 hours for both transfer-learning and fine-tuing.
 
-The "result.jpynb" file generates and describes a few figures of merit. "examples.png" shows some images, which were either classified correctly (first column) or incorrectly (second and third column). Arguably, many mis-classified images are tough cases even for human eyes (e.g. interoir images, images with overlayed text, images with multiple buildings). It would be interesting to see how this NN performs on a more curated data set.
+The "result.jpynb" file generates and describes a few figures of merit. "examples.png" shows some images, which were either classified correctly (first column) or incorrectly (second and third column). Arguably, many mis-classified images are tough cases even for human eyes (e.g. interoir images, images with overlayed text, images with multiple buildings).
 
 The confusion matrix is given here:
 ![here](https://github.com/dominik31415/architecture/blob/master/confusionMatrix.png)
