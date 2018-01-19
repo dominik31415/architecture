@@ -1,4 +1,4 @@
-# Classifying buildings using Keras/InceptionV3 by architectural style
+# Classifying buildings by architectural style using Keras/InceptionV3 
 
 ### Summary:
 I trained (transfer learning + fine-tuning) the InceptionV3 using Keras to classify buildings by their architectural style (I picked 10 styles, see below). The training images were harvested from Bing using a script. The NN eventually achieves about **65% accuracy**. Most errors are due to either low quality training images (especially in the Ottoman architecture) or styles that are difficult to discern in general (modern, postmodern, brutalist).
@@ -14,7 +14,8 @@ Trained styles:
 - downsize.py , rescales all images to 500px along long axis 
 - training.ipynb , main script for training the NN 
 - results.ipynb , generates some graphs/metrics of the trained NN 
-- weights-xx.hdf5 , my weights after fine-tuning 
+- weights-xx.hdf5 , my weights after fine-tuning
+- ImageDataGeneratorExtended.py , a modified Keras image generator. it adds the option to crop images randomly
 
 
 
