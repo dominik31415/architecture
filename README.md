@@ -37,7 +37,8 @@ All training is done in "training.ipynb". On my computer (SSD and GTX1060) it ta
 
 The "result.jpynb" file generates and describes a few figures of merit. "examples.png" shows some images, which were either classified correctly (first column) or incorrectly (second and third column). Arguably, many mis-classified images are tough cases even to human eyes (e.g. interoir images, images with overlayed text, images with multiple buildings).
 
-The confusion matrix is given here:
+Some sample images (right and wrong), as well as the confusion matrix is given here:
+![here](https://github.com/dominik31415/architecture/blob/master/architecture.png)
 ![here](https://github.com/dominik31415/architecture/blob/master/confusionMatrix.png)
 
 Three obvervations:
